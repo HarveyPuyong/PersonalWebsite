@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/navigation/top-nav.css" />
+    <link rel="stylesheet" href="style/navigation/side-nav.css" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link rel="stylesheet" href="style/services.css" />
+    <link rel="stylesheet" href="style/projects.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header-section">
+        <nav class="top-nav">
+          <ul>
+            <li>
+              <p onclick="location.reload()">Personal()</p>
+            </li>
+            <li>
+              <a href="#home-section" class="nav-link home">Home</a>
+            </li>
+            <li>
+              <a href="#about-section" class="nav-link about">About</a>
+            </li>
+            <li>
+              <a href="#services-section" class="nav-link services">Services</a>
+            </li>
+            <li>
+              <a href="#projects-section" class="nav-link projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact-section" class="nav-link contact" id="contact-btn"
+                >Contact me</a
+              >
+  
+              <img
+                class="icon show-side-nav-icon"
+                src="icons/white burger nav.png"
+                alt="side nav icon" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+  
+      <nav class="side-nav">
+        <ul>
+          <li>
+            <div class="cross-icon hide-sideNav-btn">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <a href="#contact-section" class="nav-link contact" id="contact-btn"
+              >Contact me</a
+            >
+          </li>
+          <li>
+            <a href="#home-section" class="nav-link home">Home</a>
+          </li>
+          <li>
+            <a href="#about-section" class="nav-link about">About</a>
+          </li>
+          <li>
+            <a href="#services-section" class="nav-link services">Services</a>
+          </li>
+          <li>
+            <a href="#projects-section" class="nav-link projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <main>
+        <section class="home-section home" id="home-section">
+          <div class="profile-detail">
+            <p>Hello visitor, I'm</p>
+            <h1 class="my-name gradient-word">John Harvey Puyong</h1>
+            <h2 class="display-skills gradient-word"></h2>
+            <p>Welcome to my personal website.</p>
+            <div class="my-social-media-accounts">
+              <a
+                class="social-media"
+                target="_blank"
+                href="https://www.facebook.com/johnharvey.luslos.1/">
+                <img src="icons/facebook (2).png" alt="fb icon" />
+              </a>
+              <a
+                class="social-media"
+                target="_blank"
+                href="https://www.tiktok.com/@meowish72?lang=en">
+                <img src="icons/tik-tok.png" alt="tiktok icon" />
+              </a>
+              <a
+                class="social-media"
+                target="_blank"
+                href="https://www.youtube.com/@zensei-xg4bw">
+                <img src="icons/youtube.png" alt="YT icon" />
+              </a>
+              <a class="social-media" target="_blank" href="">
+                <img src="icons/instagram (1).png" alt="insta icon" />
+              </a>
+            </div>
+          </div>
+  
+          <div class="profile-pic">
+            <div id="first-layer">
+              <img
+                id="profile-img"
+                src="images/profile pic/profile pic.jpg"
+                alt="profile img" />
+            </div>
+          </div>
+        </section>
+  
+        <section class="about-section about" id="about-section">
+          <h2 class="section-name about">ABOUT ME <span class="line"></span></h2>
+          <div class="container">
+            <div>
+              <img
+                class="profile-pic"
+                src="images/profile pic/profile pic.jpg"
+                alt="profile img" />
+            </div>
+            <div class="about-self scroll-reveal">
+              <p class="first-paragraph">
+                <span
+                  >Hi everyone, My name is John Harvey Puyong, a dedicated Web
+                  Developer and IT student from philippines. My passion for web
+                  development drives me to create stunning and professional
+                  websites that stands out and provide an exceptional user
+                  experience, I really enjoy coding and build amazing websites.
+                  Outside coding.
+                </span>
+              </p>
+              <br />
+              <p class="second-paragraph">
+                <span>
+                  My goal is to build a website that you need, Website that are
+                  not only functional and user-friendly but also visually
+                  appealing.
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="my-skills-section about">
+          <h2 class="section-name"><span class="line"></span> SKILLS</h2>
+          <div class="select-skill-type">
+            <p id="tech-stack" class="selected">Tech Stack</p>
+            <p id="tools-skill">Tools</p>
+          </div>
+          
+          <div class="skills tech-stack d-grid">
+            <!-- manage add and delete skills content in skills.js -->
+          </div>
+
+          <div class="skills tools d-grid">
+            <!-- manage add and delete skills content in skills.js -->
+          </div>
+        </section>
+  
+        <section class="services-section services" id="services-section">
+          <h2 class="section-name services">
+            <span class="line left"></span> MY OFFERED SERVICES
+            <span class="line right"></span>
+          </h2>
+          <p class="subheading">Here’s What I Can Do for You</p>
+  
+          <div class="card-container grid">
+            <div class="card">
+              <img src="icons/web-developer icon.png" alt="icon" class="icon" />
+              <h3 class="service-name">Web development</h3>
+              <p class="card-description description">
+                description of services Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+              <p class="yrs-experience">1yrs experience</p>
+            </div>
+            <div class="card">
+              <img src="icons/web designer icon.png" alt="icon" class="icon" />
+              <h3 class="service-name">Web design</h3>
+              <p class="card-description description">
+                description of services Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Unde,
+              </p>
+              <p class="yrs-experience">10yrs experience</p>
+            </div>
+            <div class="card">
+              <img src="icons/video-editing.png" alt="icon" class="icon" />
+              <h3 class="service-name">Video editing</h3>
+              <p class="card-description description">
+                description of services Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Unde, reprehenderit
+              </p>
+              <p class="yrs-experience">1yrs experience</p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="projects-section projects" id="projects-section">
+          <div class="projects-container">
+            <!-- manage add and delete projects in project.js -->
+          </div>
+          
+        </section>
+  
+        <section class="contact-section contact" id="contact-section">
+          <h2 class="section-name">
+            CONNECT WITH ME
+          </h2>
+          <p class="subheading">Let’s Make Something Cool Together</p>
+          <form class="f-flex">
+            <div class="input-container">
+              <input class="input name" type="text" placeholder="Name" required />
+              <input class="input email" type="email" placeholder="Email" required/>
+            </div>
+
+            <div class="txt-area-btn-container">
+              <textarea name="Message-me" class="input" placeholder="Enter your Messsage"></textarea> 
+              <button id="submit-btn">Submit</button>
+            </div>
+         
+          </form>
+        </section>
+      </main>
+  
+      <footer>
+        <div class="wave"></div>
+  
+        <div class="other-social-media">
+          <ul>
+            <li><img src="icons/W-facebook.png" alt="fb-icon" /></li>
+            <li><img src="icons/W-tiktok.png" alt="tiktok-icon" /></li>
+            <li><img src="icons/W-youtube.png" alt="YT-icon" /></li>
+            <li><img src="icons/W-instagram.png" alt="Insta icon" /></li>
+          </ul>
+        </div>
+        @2024 Harvey dev | All Rights Reserved
+      </footer>
+    </div>
+  
+
+    <script defer type="module" src="script/main.js"></script>
+  </body>
+</html>

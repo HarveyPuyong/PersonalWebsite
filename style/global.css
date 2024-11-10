@@ -1,0 +1,82 @@
+:root {
+  --main-color: #e6c200;
+  --primary-color: white;
+  --soft-black: rgb(12, 12, 12);
+  --white-semi-transparent: rgba(255, 255, 255, 0.579);
+  --white-super-transparent: rgba(247, 247, 247, 0.394);
+
+ 
+  --XS-Fsize: 0.8rem;
+  --semi-small-Fsize: 0.85rem;
+  --small-Fsize: 1rem;
+  --normal-Fsize: 1.12rem;
+  --medium-Fsize: 1.6rem;
+  --XL-Fsize: 1.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+img {
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 50px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: var(--primary-color);
+
+}
+.wrapper{
+  --wrapper-max-width: 950px;
+  --wrapper-padding: 10%;
+
+  width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
+  margin-inline: auto;
+}
+
+main {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.section-name {
+  /* --phone-Fsize:calc(var(--XL-Fsize) - 10rem);
+
+  font-size:clamp(var(--phone-Fsize), 2vw, var(--XL-Fsize)) ; */
+  font-size: var(--XL-Fsize);
+  margin-bottom: 1rem;
+  position: relative;
+  color: inherit;
+  text-align: center;
+}
+.section-name.projects {
+  margin-bottom: 2rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(74, 74, 74);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+

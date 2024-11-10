@@ -1,0 +1,60 @@
+footer {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--main-color);
+  background-color: rgb(9, 9, 9);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+}
+
+.wave {
+  background-color: rgb(0, 0, 0);
+  background-image:
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='208'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10%25' y2='100%25'%3e%3cstop stop-color= 'rgb(10, 10, 10)' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='rgb(10, 10, 10)' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='200'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%50' y1='-10.959%25' y2='100%0'%3e%3cstop stop-color='rgba(10, 10, 10)' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='rgb(10, 10, 10)' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='190'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='80%25'%3e%3cstop stop-color='rgb(10, 10, 10)' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='rgb(10, 10, 10)' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+  background-repeat: repeat-x;
+  background-size: 900px 50%;
+  background-position: 0 130%, -50px 130%, 500px 130%;
+
+  animation: 20s waves linear infinite forwards;
+}
+
+footer .wave {
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+}
+
+footer .other-social-media ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+  justify-content: center;
+  height: 3rem;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+footer .other-social-media ul li {
+  width: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer .other-social-media ul li:hover {
+  padding-bottom: 0.5rem;
+}
+
+@keyframes waves {
+  to {
+    background-position: 2000px 130%, 3150px 130%, 5300px 130%;
+  }
+}
