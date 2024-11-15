@@ -8,7 +8,7 @@ export function animation(){
     }
   },
    {
-    rootMargin: '-100px'
+    rootMargin: '-50px'
   });
 
   aboutMeObserver.observe(aboutMe);
@@ -23,7 +23,7 @@ export function animation(){
     }
   },
   {
-    rootMargin: '-100px'
+    rootMargin: '-50px'
   });
  
   aboutProfileObserver.observe(aboutProfilePic);
@@ -58,7 +58,7 @@ export function animation(){
     })
   },
   {
-    rootMargin: '-70px'
+    rootMargin: '-50px'
   }
   );
 
@@ -95,7 +95,7 @@ export function animation(){
       })
     },
     {
-      rootMargin: '-100px'
+      rootMargin: '-50px'
     }
   );
     
